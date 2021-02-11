@@ -4,8 +4,12 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 # Press the green button in the gutter to run the script.
+
+from introduction import Introduction
+
 def screening_presentation():
-    pass
+    introduction = Introduction(robios_intro = True, log_user = True)
+
 
 def screening_form():
     pass

@@ -4,9 +4,10 @@ welcome_message = "Bem vindo a triagem do Covid-19\n" \
                   "Para a sua seguranca e dos demais clientes, por favor\n" \
                   "preencha com atencao o formulario de triagem a seguir."
 
+
 class Introduction:
 
-    def __init__(self, robios_intro = False):
+    def __init__(self, robios_intro=False):
         self.__robios_intro = robios_intro
 
     def start(self):

@@ -25,8 +25,8 @@ class User:
     def request_name(self):
         name = input("Por favor, insira seu nome")
         print(f"Nome: {name}, confirmar?")
-        confirm = input("(Yes/No)")
-        if confirm.lower() == "y" or confirm.lower() == "yes":
+        confirm = input("(Sim/Não)")
+        if confirm.lower() == "y" or confirm.lower() == "yes" or confirm.lower() == "s" or confirm.lower() == "sim":
             self.__user_data['name'] = name
         else:
             self.request_name()
@@ -35,8 +35,8 @@ class User:
     def request_cpf(self):
         cpf = input(f"Olá {self.__user_data.get('name')}\nPor favor, digite o seu CPF")
         print(f"CPF: {cpf}, confirmar?")
-        confirm = input("(Yes/No)")
-        if confirm.lower() == "y" or confirm.lower() == "yes":
+        confirm = input("(Sim/Não)")
+        if confirm.lower() == "y" or confirm.lower() == "yes" or confirm.lower() == "s" or confirm.lower() == "sim":
             self.__user_data['cpf'] = cpf
         else:
             self.request_cpf()

@@ -20,7 +20,6 @@ class ClientMQTT:
     de triagem do Robios.
     """
 
-
     __broker = "broker.emqx.io"
 
     def __init__(self):

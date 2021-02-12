@@ -22,7 +22,7 @@ class Main:
         self.send_result()
 
     def intro(self):
-        introduction = Introduction(robios_intro=True)
+        introduction = Introduction(robios_intro=False)
         introduction.start()
 
     def load_form_rules(self):
@@ -38,13 +38,8 @@ class Main:
         screening.start()
 
     def send_result(self):
-        self.__prepare_result()
         client = ClientMQTT()
         client.publish(self.__form_result)
-
-    def __prepare_result(self):
-        if self.__log_user:
-            self.__form_result['user'] = self.__user.get_user()
 
 
 if __name__ == '__main__':

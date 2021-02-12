@@ -56,7 +56,7 @@ class ScreeningController:
                 if answer.lower() == 'y' or answer.lower() == 'yes' or answer.lower() == 's' or answer.lower() == 'sim':
                     self.form_results['answers'][key] = True
                     self.form_results['risk'] = True
-                    if not self.fast:
+                    if self.fast:
                         return
                 else:
                     self.form_results['answers'][key] = False

@@ -6,14 +6,15 @@
 # Press the green button in the gutter to run the script.
 from user import User
 
+
 class Introduction:
 
-    __user_data = {"cpf": "",
-                 "name": ""}
-
-    def __init__(self, robios_intro = False, log_user = False):
+    def __init__(self, robios_intro=False, log_user=False, user=None):
         self.__log_user = log_user
+        self.__user = user
         self.__robios_intro = robios_intro
+
+    def start(self):
         self.intro()
         self.new_screening()
 
@@ -29,7 +30,7 @@ class Introduction:
 
         print("Bem vindo a triagem do Covid-19\n"
               "Este formulario visa o bem de todos")
-        #TODO
+        # TODO
 
     def introduce_robios(self):
         '''
@@ -55,5 +56,5 @@ class Introduction:
         '''
 
         if self.__log_user:
-            user = User()
-            print(user.get_user())
+            self.__user.sign()
+            print(self.__user.get_user())

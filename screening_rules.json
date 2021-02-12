@@ -1,0 +1,54 @@
+{
+  "pt_br": {
+    "rules": [
+      {
+        "id": 1001,
+        "pre_message":"",
+        "question": "Voce apresentou {} nas ultimas 48h? ",
+        "condition": {
+          "fever_chills": "febre ou calafrios",
+          "cough": "tosse",
+          "breathing_issue": "falta de ar ou dificuldade para respirar",
+          "fatigue": "fadiga",
+          "body_issue": "dores musculares ou no corpo",
+          "headache": "dor de cabeca",
+          "taste_smell_issue": "reducao no paladar ou olfato",
+          "sore_throat": "dor de garganta",
+          "nose_issue": "congestao nasal ou nariz escorrendo",
+          "stomach_issue": "nausea ou vomito",
+          "diarrhea": "diarreia"
+        },
+        "post_message": "",
+        "recommendations": []
+      },
+      {
+        "id": 1002,
+        "pre_message":"",
+        "question": "Nos ultimos 14 dias, voce esteve a menos de 2 metros, por um total de 15 minutos, com {}",
+        "condition": {
+          "confirmed_proximity": "alguem testado positivo para COVID-19?",
+          "symptom_proximity": "alguam que apresentou sintomas de COVID-19?"
+        },
+        "post_message": ""
+      },
+      {
+        "id": 1003,
+        "pre_message":"",
+        "question": "Voce esta em isolamento ou quarentena {}",
+        "condition": {
+          "risk_proximity": "pela possibilidade de ter tido contato recente com o virus ou pela possibilidade de ter contraido COVID-19?"
+        },
+        "post_message": ""
+      },
+      {
+        "id": 1004,
+        "pre_message":"",
+        "question": "Voce esta aguardando o resultado de algum teste de COVID-19?",
+        "condition": {},
+        "post_message": ""
+      }
+    ],
+    "recommendations": []
+  },
+  "en_us": {}
+}

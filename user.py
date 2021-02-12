@@ -1,9 +1,8 @@
 class User:
 
-    __user_data = {"cpf": "",
-                 "name": ""}
+    __user_data = {}
 
-    def __init__(self):
+    def sign(self):
         self.request_name()
         self.request_cpf()
 

@@ -39,5 +39,17 @@ Off: O preenchimento do formulário é feito até o final em todos os casos, com
 - JSON Forms Settings
 ```
 Todos os campos de formulário estão presentes em um arquivo JSON padronizável e escalável.  
-O formulário está disponível em português até o momento. No entando, sua padronização prevê o suporte a multiplas linguas.
+O formulário está disponível em português até o momento. No entando, sua padronização prevê o  
+suporte a multiplas linguas ou modelos de formulário, util para parcerias.
 ```
+
+## Próximos passos
+
+- Traduzir a documentação do código e dos formulários.
+
+- Substituir a verificação das respostas de multipla escolha (Sim/Não) por uma interface com opções selecionáveis, sem a necessidade de digitação por parte do usuário.
+
+- Adicionar validadores nas respostas que convém ter validação, como campos de CPF.
+
+- Permitir a atualização do arquivo screening_rules.json caso haja conexão com a internet. Caso contrário, permitir o uso da ultima versão local disponível como forma de manter a independencia da nuvem.
+

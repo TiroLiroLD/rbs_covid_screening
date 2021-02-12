@@ -11,7 +11,7 @@ import json
 
 class Main:
 
-    def __init__(self, log_user = True):
+    def __init__(self, log_user=True):
         self.__log_user = log_user
         self.__user = User()
         self.__form_result = {}
@@ -19,10 +19,10 @@ class Main:
         self.intro()
         self.__form_rules = self.load_form_rules()
         self.__start_screening()
-        self.screening_send_result()
+        self.send_result()
 
     def intro(self):
-        introduction = Introduction(robios_intro=True, log_user=self.__log_user, user=self.__user)
+        introduction = Introduction(robios_intro=True)
         introduction.start()
 
     def load_form_rules(self):
@@ -31,15 +31,16 @@ class Main:
 
     def __start_screening(self):
         # self.user, self.form_result
-        screening = ScreeningController(self.__form_rules, self.__form_result)
+        screening = ScreeningController(self.__form_rules,
+                                        self.__form_result,
+                                        log_user=self.__log_user,
+                                        user=self.__user)
         screening.start()
 
-
-    def screening_send_result(self):
+    def send_result(self):
         self.__prepare_result()
         client = ClientMQTT()
         client.publish(self.__form_result)
-
 
     def __prepare_result(self):
         if self.__log_user:

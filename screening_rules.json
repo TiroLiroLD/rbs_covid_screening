@@ -44,7 +44,9 @@
         "id": 1004,
         "pre_message":"",
         "question": "Voce esta aguardando o resultado de algum teste de COVID-19?",
-        "condition": {},
+        "condition": {
+          "waiting_results": ""
+        },
         "post_message": ""
       }
     ],

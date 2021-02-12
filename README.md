@@ -45,6 +45,8 @@ suporte a multiplas linguas ou modelos de formulário, util para parcerias.
 
 ## Próximos passos
 
+- Refatoração de acordo com TDD
+
 - Traduzir a documentação do código e dos formulários.
 
 - Substituir a verificação das respostas de multipla escolha (Sim/Não) por uma interface com opções selecionáveis, sem a necessidade de digitação por parte do usuário.

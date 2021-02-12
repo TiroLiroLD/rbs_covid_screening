@@ -3,13 +3,16 @@
 
 class ScreeningController:
     '''
-    TODO
+    Controlador do processo de realizacao da triagem
+    atraves de um formulario.
     '''
 
     def __init__(self, form_rules, form_results):
         self.form_rules = form_rules
         self.form_results = form_results
+        self.form_results['risk'] = False
         self.form_results['answers'] = {}
+        self.full = False
 
     def start(self):
         '''
@@ -21,5 +24,7 @@ class ScreeningController:
                 if answer.lower() == 'y' or answer.lower() == 'yes' or answer.lower() == 's' or answer.lower() == 'sim':
                     self.form_results['answers'][key] = True
                     self.form_results['risk'] = True
+                    if not self.full:
+                        return
                 else:
                     self.form_results['answers'][key] = False

@@ -1,16 +1,10 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-# Press the green button in the gutter to run the script.
-
 # CDC Covid Screening flow at https://www.cdc.gov/screening/index.html
 # Paper version available at https://www.cdc.gov/screening/paper-version.pdf
 
 
 from introduction import Introduction
 from screening_controller import ScreeningController
+from mqtt import ClientMQTT
 from user import User
 import json
 
@@ -43,7 +37,8 @@ class Main:
 
     def screening_send_result(self):
         self.__prepare_result()
-        pass
+        client = ClientMQTT()
+        client.publish(self.__form_result)
 
 
     def __prepare_result(self):

@@ -51,5 +51,5 @@ suporte a multiplas linguas ou modelos de formulário, util para parcerias.
 
 - Adicionar validadores nas respostas que convém ter validação, como campos de CPF.
 
-- Permitir a atualização do arquivo screening_rules.json caso haja conexão com a internet. Caso contrário, permitir o uso da ultima versão local disponível como forma de manter a independencia da nuvem.
+- Permitir a atualização do arquivo screening_rules.json caso haja conexão com a internet, para facilitar a atualização de multiplos dispositivos caso as regras de triagem sejam alteradas. Caso contrário, permitir o uso da ultima versão local disponível como forma de manter a independencia da nuvem.
 

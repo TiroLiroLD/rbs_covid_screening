@@ -36,9 +36,8 @@ O formulário de dados pessoais é escalável e suas regras são definidas por m
 On: O preenchimento do formulário é interrompido a qualquer momento ao identificar a possibilidade de infecção.
 Off: O preenchimento do formulário é feito até o final em todos os casos, com verificação posterior.
 ```
-- JSON Forms Setting
+- JSON Forms Settings
 ```
 Todos os campos de formulário estão presentes em um arquivo JSON padronizável e escalável.  
 O formulário está disponível em português até o momento. No entando, sua padronização prevê o suporte a multiplas linguas.
 ```
-- Switch on/off para apresentar o Robios antes da Triagem

@@ -53,3 +53,5 @@ suporte a multiplas linguas ou modelos de formulário, util para parcerias.
 
 - Permitir a atualização do arquivo screening_rules.json caso haja conexão com a internet, para facilitar a atualização de multiplos dispositivos caso as regras de triagem sejam alteradas. Caso contrário, permitir o uso da ultima versão local disponível como forma de manter a independencia da nuvem.
 
+- Mover todas as strings para um arquivo dedicado, no qual possa ser feita a tradução de forma simplificada.
+
